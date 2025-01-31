@@ -4,7 +4,7 @@ import { FaReact } from 'react-icons/fa'
 const Navbar = () => {
   return (
     <>
-        <div className='bg-blue-600 flex flex-row items-center justify-between '>
+        <div className='bg-blue-700 flex flex-row items-center justify-between '>
             <div className='flex ml-10'>
                 <FaReact className='text-white h-10 w-10 mr-3'/>
                 <h1 className='text-white rounded-full font-medium  text-3xl text-bold mr-7'>React Jobs</h1>
