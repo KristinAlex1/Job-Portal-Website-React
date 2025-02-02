@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaReact } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -12,9 +13,10 @@ const Navbar = () => {
             
             <div className='flex p-5 text-white'>
                 
-                <a className='mr-7 text-2xl hover:text-blue-500 transition duration-500' href = '/home'>Home</a>
-                <a className='mr-7 text-2xl hover:text-blue-500 transition duration-500' href = '/home'>Jobs</a>
-                <a className='mr-7 text-2xl hover:text-blue-500 transition duration-500' href = '/home'>Add Jobs</a>
+                <Link className='mr-7 text-2xl hover:text-blue-500 transition duration-500' to = '/home'>Home</Link>
+                <Link className='mr-7 text-2xl hover:text-blue-500 transition duration-500' to = '/jobs'>Jobs</Link>
+                <Link className='mr-7 text-2xl hover:text-blue-500 transition duration-500' to = '/addjobs'>Add Jobs</Link>
+                <Link className='mr-7 text-2xl hover:text-blue-500 transition duration-500' to = '/about'>About</Link>
             </div>
 
         </div>

@@ -28,7 +28,7 @@ const CardComponent = () => {
     <div className='flex flex-row items-center justify-center bg-blue-200 w-full'>
          {jobs.jobs.map((item, index) => (
         
-        <div key={index} className='w-110 mr-3 ml-3 mt-10 mb-10 rounded-3xl h-90 bg-blue-300'>
+        <div key={index} className='w-110 mr-3 ml-3 mt-10 mb-10 shadow-md rounded-3xl h-90 bg-blue-300'>
         
             <h1 className='ml-3 mt-4'>
                 Full time

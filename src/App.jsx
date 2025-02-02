@@ -8,12 +8,16 @@ import Footer from './components/Footer'
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import AddJobs from './pages/AddJobs';
+import Jobs from './pages/Jobs';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path = '/' element = {<MainLayout/>}>
-      <Route index element = {<HomePage/>}/>
+      <Route index path = '/home' element = {<HomePage/>}/>
+      <Route path = '/addjobs' element = {<AddJobs/>}/>
+      <Route path = '/jobs' element = {<Jobs/>}/>
       <Route path = '/about' element = {<AboutPage/>}/>
 
     </Route>
