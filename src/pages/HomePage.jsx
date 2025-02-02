@@ -11,9 +11,11 @@ const HomePage = () => {
     <>
         
       
+      <Hero/>
       <Card/>
       <JobListing/>
       <ViewAllJobs/>
+      <Footer/>
       
     </>
   )

@@ -8,9 +8,9 @@ const MainLayout = () => {
   return (
     <>
         <Navbar/>
-        <Hero/>
+        
         <Outlet/>
-        <Footer/>
+        
     </>
   )
 }
