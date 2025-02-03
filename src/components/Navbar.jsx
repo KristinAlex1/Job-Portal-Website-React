@@ -19,9 +19,9 @@ const Navbar = () => {
             <div className='flex p-5 text-white'>
                 
                 <NavLink className={classStyle}  to = '/'>Home</NavLink>
-                <NavLink className={classStyle} to = '/jobs'>Jobs</NavLink>
-                <NavLink className={classStyle} to = '/addjobs'>Add Jobs</NavLink>
-                <NavLink className={classStyle} to = '/about'>About</NavLink>
+                <NavLink className={classStyle} to = 'jobs'>Jobs</NavLink>
+                <NavLink className={classStyle} to = 'addjobs'>Add Jobs</NavLink>
+                <NavLink className={classStyle} to = 'about'>About</NavLink>
             </div>
 
         </div>
