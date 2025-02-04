@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { FaMapLocation, FaMapLocationDot } from 'react-icons/fa6';
 import { FaMapMarker } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
    
 
@@ -66,7 +67,7 @@ const CardComponent = ({isHome = false}) => {
             </h1>
             <hr className='ml-3 mr-3 opacity-25'></hr>
             <h1 className='flex items-center p-2 ml-3 mt-2 text-red-900'>
-                <FaMapMarker/>{item.location} <button className='bg-white text-black h-8 w-25 rounded-lg ml-15'>Read More</button>
+                <FaMapMarker/>{item.location} <NavLink to= {`/jobs/${item.id}`}><button className='bg-white text-black h-8 w-25 rounded-lg ml-15'>Read More</button></NavLink>
             </h1>
 
         </div>

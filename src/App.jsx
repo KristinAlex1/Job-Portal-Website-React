@@ -11,15 +11,18 @@ import AboutPage from './pages/AboutPage';
 import AddJobs from './pages/AddJobs';
 import Jobs from './pages/Jobs';
 import NotFoundPage from './pages/NotFoundPage';
+import JobPage from './pages/JobPage';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path = '/' element = {<MainLayout/>}>
       <Route index element = {<HomePage/>}/>
-      <Route path = 'jobs' element = {<Jobs/>}/>
-      <Route path = 'addjobs' element = {<AddJobs/>}/>
-      <Route path = 'about' element = {<AboutPage/>}/>
+      <Route path = '/jobs' element = {<Jobs/>}/>
+      
+      <Route path = '/jobs/:id' element = {<JobPage/>}/>
+      <Route path = '/addjobs' element = {<AddJobs/>}/>
+      <Route path = '/about' element = {<AboutPage/>}/>
       <Route path = '*' element = {<NotFoundPage/>}/>
 
     </Route>
