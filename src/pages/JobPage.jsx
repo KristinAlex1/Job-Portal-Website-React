@@ -22,16 +22,13 @@ const JobPage = ({deleteJob}) => {
     fetchJobs();
   }, []);
 
-  const onDeleteJob = (id) => {
+  const onDeleteJob = () => {
 
     const confirm = window.confirm('Are you sure?')
 
     if(!confirm)return;
 
     deleteJob(id);
-
-
-    
 
 
   }
