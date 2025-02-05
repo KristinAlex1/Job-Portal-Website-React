@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const JobPage = () => {
+const JobPage = ({deleteJob}) => {
   const [job, setJob] = useState({});
   const [loading, setLoading] = useState(true);
   const {id} = useParams()
@@ -21,6 +21,20 @@ const JobPage = () => {
     };
     fetchJobs();
   }, []);
+
+  const onDeleteJob = (id) => {
+
+    const confirm = window.confirm('Are you sure?')
+
+    if(!confirm)return;
+
+    deleteJob(id);
+
+
+    
+
+
+  }
 
   
   return (
@@ -108,7 +122,7 @@ const JobPage = () => {
                       >
                         Edit Job
                       </a>
-                      <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">
+                      <button onClick={onDeleteJob} className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">
                         Delete Job
                       </button>
                     </div>
