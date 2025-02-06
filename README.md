@@ -23,7 +23,11 @@ A simple and responsive **Job Portal Website** built using **React** and **Tailw
 
 
 ## 🎥 Demo Video
-[Screen_recording_20250115_172211.webm](https://github.com/user-attachments/assets/7b2ec236-1e8e-4f16-94f5-97a950bdeb43)
+
+
+https://github.com/user-attachments/assets/d96ad98d-6390-463d-a787-07a7fbb9e2a2
+
+
 
 
 
